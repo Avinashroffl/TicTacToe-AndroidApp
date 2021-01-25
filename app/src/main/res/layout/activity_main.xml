@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:id="@+id/mainBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="55dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:nestedScrollingEnabled="false"
+        android:padding="10dp">
+
+        <TableRow
+            android:id="@+id/row0"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/LeftCell"
+                android:layout_column="0"
+                android:width="50dp"></TextView>
+
+            <TextView
+                style="@style/MiddleCell"
+                android:layout_column="1"
+                android:width="50dp"></TextView>
+
+            <TextView
+                style="@style/RightCell"
+                android:layout_column="2"
+                android:width="50dp"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row1"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/LeftCell"
+                android:layout_column="0"
+                android:width="50dp"></TextView>
+
+            <TextView
+                style="@style/MiddleCell"
+                android:layout_column="1"
+                android:width="50dp"></TextView>
+
+            <TextView
+
+                style="@style/RightCell"
+                android:layout_column="2"
+                android:width="50dp"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/LeftCell"
+                android:layout_column="0"
+                android:width="50dp"></TextView>
+
+            <TextView
+                style="@style/MiddleCell"
+                android:layout_column="1"
+                android:width="50dp"></TextView>
+
+            <TextView
+                style="@style/RightCell"
+                android:layout_column="2"
+                android:width="50dp"></TextView>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/turn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="          Turn:  "
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="10dp"
+        android:text="   Restart   " />
+
+</LinearLayout>
